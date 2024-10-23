@@ -17,11 +17,67 @@
             <h1 class="text-white p-5">
                 CALCOLA IL PREZZO DEL TUO BIGLIETTO
             </h1>
-
-
-
-
-    <!-- JavaScript -->
+            <div id="first_ticket" class="bg_color_ticket p-5">
+              <div class="row d-flex justify-content-around">
+                  <div class="col">
+                      <h4 class="purple-color pb-3">Nome e Cognome</h4>
+                      <input class="form-control-lg" type="text" id="firstnamelastname" name="firstnamelastname" placeholder="Nome e Cognome"/> 
+                  </div> 
+                  <div class="col">
+                      <h4 class="purple-color pb-3">Km da percorrere</h4>
+                      <input class="form-control-lg" type="number" id="km" name="km" placeholder="Km da percorrere"/>
+                  </div>
+                  <div class="col">
+                      <h4 class="purple-color pb-3">Fascia d'eta</h4>
+                      <input class="form-control-lg" type="number" id="age" name="age" placeholder="Età"/>
+                  </div> 
+                  <div class="row">
+                      <div class="col">
+                          <button type="button" class="btn-purple mt-5 mx-3" id="calc" value="generate" >Genera</button>
+                          <button type="button" class="btn-purple mt-5 mx-3" id="annulla" value="reset">Annulla</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+    
+        <h2 class="text-white m-b-3 p-4">
+            IL TUO BIGLIETTO 
+        </h2>
+    
+        <div class="bg_color_ticket p-5">
+            <div class="row">
+                <h4 class="text-start fw-bold p-0">
+                    DETTAGLI PASSEGGERI
+                </h4>
+            </div>
+    
+            <div class="row border_second_ticket d-flex justify-content-between">
+                <div class="col-auto p-3 background-color">
+                    <h4 class="m-b-3 fw-bold text-start">NOME PASSEGGERO</h4>
+                    <h4 class="fw-bold text-start">Jon Snow</h4>
+                </div>
+                <div class="col">
+                    <h4 class="m-b-3 fw-bold text-start">Offerta</h4>
+                    <div id="discount-type" class="text-start"></div>
+                </div>
+                <div class="col">
+                    <h4 class="m-b-3 fw-bold text-start">Carrozza</h4>
+                </div>
+                <div class="col">
+                    <h4 class="m-b-3 fw-bold text-start">Codice CP</h4>
+               </div>
+                <div class="col">
+                    <h4 class="m-b-3 fw-bold text-start">Costo biglietto</h4>
+                    <div id="result-container" class="col text-start">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!-- JavaScript -->
   <script defer src="js/script.js"></script>
 </body>
 </html>
